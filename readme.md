@@ -120,38 +120,37 @@ Remove uma simulação previamente cadastrada pelo seu ID.
 
 ---
 
-> ## Bugs encontrados
->
->
->- **Criar uma simulação**
-   >   - **Atributo "Valor"**
-         >
-         >    Na documentação ```PDF``` está registrado que atributo "Valor" não pode ser inferior a 1000.
-         >    ```
->    Nos testes realizados identificamos que é possível criar uma simulação com "valor" 999.
+ ## Bugs encontrados
 
->- **Criar uma simulação**
-   >   - **Atributo "Seguro"**
-         >
-         >    Na documentação ```PDF``` está registrado que atributo "Seguro" é obrigatório.
-         >    ```
->    Nos testes realizados identificamos que na falta desse campo não é permitido criar uma simulação, porém não retorna nenhuma mensagem sobre o campo seguro não estar no body. Os demais campos são sinalizados que não podem ficar vazios.
+- **Criar uma simulação**
+  - **Atributo "Valor"**
 
->- **Criar uma simulação**
-   >   - **Atributo "Parcelas"**
-         >
-         >    Na documentação ```PDF``` está registrado que atributo "Parcelas" para pagamento deve ser igual ou maior que 2 e menor ou igual a 48 .
-         >    ```
->    Nos testes realizados identificamos é possível criar uma simulação com 49 parcelas
+             Na documentação ```PDF``` está registrado que atributo "Valor" não pode ser inferior a 1000.
+             ```
+  Nos testes realizados identificamos que é possível criar uma simulação com "valor" 999.
 
->- **Deletar uma simulação**
-   >   - **PDF vs Swagger"**
-         >
-         >    Na documentação ```PDF``` informa que o status code deve ser 204 ao deletar simulação por ID. No swagger retorna status code 200 após deletar por ID.
+- **Criar uma simulação**
+  - **Atributo "Seguro"**
 
->- **Deletar uma simulação**
-   >   - **ID inexistente"**
-         >
-         >    Na documentação ```PDF``` informa status code 404 ao deletar simulação por ID inexistente.
-         >
-         >    Nos testes realizados foi identificado que após deletar ID inexistente retornar status 200.
+             Na documentação ```PDF``` está registrado que atributo "Seguro" é obrigatório.
+             ```
+  Nos testes realizados identificamos que na falta desse campo não é permitido criar uma simulação, porém não retorna nenhuma mensagem sobre o campo seguro não estar no body. Os demais campos são sinalizados que não podem ficar vazios.
+
+- **Criar uma simulação**
+  - **Atributo "Parcelas"**
+
+             Na documentação ```PDF``` está registrado que atributo "Parcelas" para pagamento deve ser igual ou maior que 2 e menor ou igual a 48 .
+             ```
+  Nos testes realizados identificamos é possível criar uma simulação com 49 parcelas
+
+- **Deletar uma simulação**
+  - **PDF vs Swagger"**
+
+             Na documentação ```PDF``` informa que o status code deve ser 204 ao deletar simulação por ID. No swagger retorna status code 200 após deletar por ID.
+
+- **Deletar uma simulação**
+  - **ID inexistente"**
+
+             Na documentação ```PDF``` informa status code 404 ao deletar simulação por ID inexistente.
+         
+             Nos testes realizados foi identificado que após deletar ID inexistente retornar status 200.
