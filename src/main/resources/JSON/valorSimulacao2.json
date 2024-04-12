@@ -1,0 +1,8 @@
+{
+  "nome": "Lucas",
+  "cpf": 98648273081,
+  "email": "email@email.com",
+  "valor": 1000,
+  "parcelas": 2,
+  "seguro": true
+}
